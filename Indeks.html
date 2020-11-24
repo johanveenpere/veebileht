@@ -3,10 +3,83 @@
 <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
-    <div class="valge">
-        <p> Tekst tekst tekst tekst </p>
+    <div id="tutvustus">
+        <div class="valge">
+            <p> Meie projekti eesmärk on teha programm, mis muudab kasutaja sisestatud arvu binary'ks ja esitab selle kahe valitud emoji'na. Programmi on võimalik ka valitud emoji'dega kellaaega näitama panna. Samuti võiks programm olla saadaval mobiilirakendusena kellaaja mugavamaks kuvamiseks. (Jah oletame et see ei hõlju lihtsalt niisama õhus)</p>
+        </div>
+        <div class="must">
+            <p>user@mac:~$ projekt.py
+                sisesta inf: </p>
+        </div>
+        <div class="valge">
+            <p>
+                Noorte rebaste kirjutatud ussikeelne programm, mis muudab ka kõige igavama kellaaja põnevaks emoji salakoodiks. Programm võtab Teie nutisõbra ajanäitaja ning teeb selle tundidest ja minutitest kaks ilusat nullidest ja ühtedest koosnevat koodirida. Järgmise sammuna asendab programm kahendkoodi Teie eelnevalt valitud emotsiooni ikoonidega ning sunnib Teie nutikaaslast vana üksluise numbrikellaaja asemel uut pildikesterida kasutama.
+            </p>
+        </div>
     </div>
-    <div class="must">
-        <p>Teine tekst tekst tekst tekst </p>
+    <div id="kooditutvustus">
+        <div class="valge">
+            <div id="selgitus1">
+                <p>mingi rando värk. Impordid ja funktsiooni defineerimine</p>
+            </div>
+            <div id="kood1" class="must">
+                <pre>
+                <code>
+from time import sleep
+from datetime import datetime
+
+def strToEmoji(string, emoji0, emoji1):
+    out = ' '
+    
+    for l in string:
+        out += (format(ord(l), 'b')) + ' '
+    out.replace("1", emoji1).replace("0", emoji0)
+    
+    return out
+                </code>
+                </pre>
+            </div>
+            <div id="selgitus2">
+                <p>
+                    veel üks funktsioon
+                </p>
+            </div>
+            <div id="kood2" class="must">
+                <pre>
+                <code>
+def intToEmoji(integer, emoji0, emoji1):
+# Mida, millega asendada 0, millega asendada 1
+    out = '{0:06b}'.format(integer).replace("1", emoji1).replace("0", emoji0)
+    return out
+
+                </code>
+                </pre>
+            </div>
+            <div id="selgitus3">
+                <p>
+                    peamine tsükkel
+                </p>
+            </div>
+            <pre id="kood3" class="must">
+                <code>
+before = 0
+
+try:
+    while True:
+        now = datetime.now() 
+        if before != now.strftime("%H %M"): #kontrollib kas eelmine prinditud aeg erineb praegusest
+            before = now.strftime("%H %M")
+            print(intToEmoji(int(before.split()[0]), "\N{spider}", "\N{ant}"), intToEmoji(int(before.split()[1]), "\N{spider}", "\N{ant}"))
+        sleep(5)
+except KeyboardInterrupt:
+    exit()
+                </code>
+            </pre>
+        </div>
     </div>
+
+    <div id="demo">
+
+    </div>
+
 </body>
