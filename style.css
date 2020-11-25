@@ -13,6 +13,7 @@ body{
     background-color: black;
     color: white;
     width: 80%;
+    position: relative;
     left: 10%;
     padding: 35px;
     border-radius: 25px;
@@ -23,13 +24,16 @@ body{
 }
 .vasakul{
     width: 50%;
+    position: relative;
     left: 15%;
 }
 .paremal{
     width: 50%;
+    position: relative;
     right: 15%;
 }
 .suur{
     width: 90%;
+    position: relative;
     left: 5%;
 }
