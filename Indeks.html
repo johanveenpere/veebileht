@@ -31,17 +31,17 @@
             </div>
     
             <div id="kood1" class="must">
-                <pre><code>from time import sleep
-from datetime import datetime
+                <pre><code><span class="syntax-keyword">from</span> time <span class="syntax-keyword">import</span> sleep
+<span class="syntax-keyword">from</span> datetime <span class="syntax-keyword">import</span> datetime
 
-def strToEmoji(string, emoji0, emoji1):
-    out = ' '
+<span class="syntax-keyword">def</span> strToEmoji(string, emoji0, emoji1):
+    out = <span class="syntax-string">' '</span>
     
-    for l in string:
-        out += (format(ord(l), 'b')) + ' '
-    out.replace("1", emoji1).replace("0", emoji0)
+    <span class="syntax-keyword">for</span> l in string:
+        out += (format(ord(l), <span class="syntax-string">'b'</span>)) + <span class="syntax-string">' '</span>
+    out.replace(<span class="syntax-string">"1"</span>, emoji1).replace(<span class="syntax-string">"0"</span>, emoji0)
     
-    return out</code></pre>
+    <span class="syntax-keyword">return</span> out</code></pre>
             </div>
     
             <div id="selgitus2">
@@ -49,10 +49,10 @@ def strToEmoji(string, emoji0, emoji1):
             </div>
     
             <div id="kood2" class="must">
-<pre><code>def intToEmoji(integer, emoji0, emoji1):
-# Mida, millega asendada 0, millega asendada 1
-    out = '{0:06b}'.format(integer).replace("1", emoji1).replace("0", emoji0)
-    return out</code></pre>
+<pre><code><span class="syntax-keyword">def</span> intToEmoji(integer, emoji0, emoji1):
+<span class="syntax-comment"># Mida, millega asendada 0, millega asendada 1</span>
+    out = <span class="syntax-string">'{0:06b}'</span>.format(integer).replace(<span class="syntax-string">"1"</span>, emoji1).replace(<span class="syntax-string">"0"</span>, emoji0)
+    <span class="syntax-keyword">return</span> out</code></pre>
             </div>
     
             <div id="selgitus3">
@@ -61,14 +61,14 @@ def strToEmoji(string, emoji0, emoji1):
     
             <pre id="kood3" class="must"><code>before = 0
 
-try:
-    while True:
+<span class="syntax-keyword">try:</span>
+    <span class="syntax-keyword">while</span> True:
         now = datetime.now() 
-        if before != now.strftime("%H %M"): #kontrollib kas eelmine prinditud aeg erineb praegusest
-            before = now.strftime("%H %M")
-            print(intToEmoji(int(before.split()[0]), "\N{spider}", "\N{ant}"), intToEmoji(int(before.split()[1]), "\N{spider}", "\N{ant}"))
+        <span class="syntax-keyword">if</span> before != now.strftime(<span class="syntax-string">"%H %M"</span>): <span class="syntax-comment"># kontrollib kas eelmine prinditud aeg erineb praegusest</span>
+            before = now.strftime(<span class="syntax-string">"%H %M"</span>)
+            print(intToEmoji(int(before.split()[0]), <span class="syntax-string">"\N{spider}"</span>, <span class="syntax-string">"\N{ant}"</span>), intToEmoji(int(before.split()[1]), <span class="syntax-string">"\N{spider}"</span>, <span class="syntax-string">"\N{ant}"</span>))
         sleep(5)
-except KeyboardInterrupt:
+<span class="syntax-keyword">except</span> KeyboardInterrupt:
     exit()</code></pre>
         </div>
     </div>

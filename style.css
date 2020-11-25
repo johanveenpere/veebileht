@@ -19,3 +19,22 @@ body{
     border-radius: 25px;
     font-family: consolas, 'Courier New', Courier, monospace;
 }
+.shadow{
+    box-shadow: 125px 100px rgba(0, 0, 0, 0.5); /* #978452; */
+}
+
+code {
+    color: rgb(129, 129, 129)
+}
+
+.syntax-comment {
+    color: greenyellow;
+}
+
+.syntax-string {
+    color: rgb(88, 122, 235);
+}
+
+.syntax-keyword {
+    color: rgb(211, 162, 0);
+}
