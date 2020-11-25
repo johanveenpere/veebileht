@@ -1,15 +1,15 @@
+body{
+    background-color: #ffdf8e;
+    background-size: cover;
+    background-image: url("https://media.sproutsocial.com/uploads/meme-example.jpg");
+}
 .valge{
     background-color: white;
     z-index: 1;
     padding: 50px;
     border-radius: 25px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-body{
-    background-color: #ffdf8e;
-    padding: 15%;
+    font-size: 40px;
 }
 .must{
     background-color: black;
@@ -21,6 +21,7 @@ body{
 }
 .shadow{
     box-shadow: 125px 100px rgba(0, 0, 0, 0.5); /* #978452; */
+<<<<<<< HEAD
 }
 
 code {
@@ -37,4 +38,6 @@ code {
 
 .syntax-keyword {
     color: rgb(211, 162, 0);
+=======
+>>>>>>> main
 }
