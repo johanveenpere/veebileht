@@ -2,6 +2,7 @@ body{
     background-color: #ffdf8e;
     background-size: cover;
 }
+
 .valge{
     background-color: white;
     padding: 50px;
@@ -9,6 +10,7 @@ body{
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
+
 .must{
     background-color: black;
     color: white;
@@ -17,6 +19,7 @@ body{
     border-radius: 25px;
     font-family: consolas, 'Courier New', Courier, monospace;
 }
+
 .shadow{
     box-shadow: 125px 100px rgba(0, 0, 0, 0.5); /* #978452; */
 }
@@ -35,25 +38,27 @@ code {
 
 .syntax-keyword {
     color: rgb(211, 162, 0);
+}
+
 .vasakul{
     width: 800px;   
-    left: 15%;
     margin-left: 150px;
     margin-bottom: 150px;
     float: left;
 }
+
 .paremal{
     width: 800px;   
-    right: 15%;
     margin-right: 150px;
     margin-bottom: 150px;
     float: right;
 }
+
 .suur{
     width: 1000px;
-    left: 5%;
     margin-left: 150px;
 }
+
 #tutvustus{
     overflow: hidden;
 }
