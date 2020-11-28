@@ -12,8 +12,8 @@ body{
 .must{
     background-color: black;
     color: white;
-    width: 950px;
-    padding: 35px;
+    z-index: 1;
+    padding: 35px 0;
     border-radius: 25px;
     font-family: consolas, 'Courier New', Courier, monospace;
 }
@@ -21,8 +21,21 @@ body{
     box-shadow: 125px 100px rgba(0, 0, 0, 0.5); /* #978452; */
 }
 
+.code {
+    overflow: auto;
+    background:
+    linear-gradient(to right, #000 33%, rgba(0,0,0, 0)), linear-gradient(to right, rgba(0,0,0, 0), #000 66%) 100%, radial-gradient(farthest-side at 0% 50%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(farthest-side at 100% 50%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)) 100%;
+    background-repeat: no-repeat;
+    background-attachment: local, local, scroll, scroll;
+    background-size: 78px 100%, 78px 100%, 26px 100%, 26px 100%;
+    background-color: black;
+    scrollbar-color: rgb(126, 126, 126) transparent;
+    padding: 0 30px;
+}
+
+
 code {
-    color: rgb(129, 129, 129)
+    color: rgb(129, 129, 129);
 }
 
 .syntax-comment {
