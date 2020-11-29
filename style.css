@@ -1,10 +1,13 @@
 body{
     background-color: #ffdf8e;
     background-size: cover;
+    margin: 0px;
+    overflow-x: hidden;
 }
 
 .valge{
     background-color: white;
+    z-index: 2;
     padding: 50px;
     border-radius: 25px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -14,7 +17,7 @@ body{
 .must{
     background-color: black;
     color: white;
-    z-index: 1;
+    z-index: 2;
     padding: 35px 0;
     border-radius: 25px;
     font-family: consolas, 'Courier New', Courier, monospace;
@@ -55,24 +58,39 @@ code {
 }
 
 .vasakul{
+    padding-top: 20px;
     width: 800px;   
     margin-left: 150px;
-    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     float: left;
 }
 
 .paremal{
+    padding: 20px 50px;
     width: 800px;   
     margin-right: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     float: right;
 }
 
 .suur{
+    padding: 20px 50px;
     width: 1000px;
     margin-left: 150px;
 }
 
 #tutvustus{
     overflow: hidden;
+}
+
+#taust{
+    position: absolute;
+    opacity: 0.2;
+    font-size: 33.75px;
+    width: 2001px;
+    margin-top: -25px;
+    margin-left: -25px;
+    z-index: -1;
+    margin-block-start: 0em;
 }
