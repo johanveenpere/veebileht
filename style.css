@@ -2,6 +2,8 @@ body{
     background-size: cover;
     margin: 0px;
     overflow-x: hidden;
+    padding-bottom: 200px;
+    background-color: #ffdf8e;
 }
 
 .valge{
@@ -49,7 +51,7 @@ code {
 }
 
 .syntax-string {
-    color: rgb(88, 122, 235);
+    color: rgba(88, 122, 235, 0.322);
 }
 
 .syntax-keyword {
@@ -57,26 +59,25 @@ code {
 }
 
 .vasakul{
-    padding-top: 20px;
-    width: 800px;   
-    margin-left: 150px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-left: 500px;
     float: left;
 }
 
 .paremal{
-    padding: 20px 50px;
-    width: 800px;   
-    margin-right: 150px;
-    margin-bottom: 100px;
+    margin-right: 500px;
     float: right;
+}
+
+.väike {
+    padding: 20px 50px;
+    width: 600px;   
+    margin-bottom: 100px;
 }
 
 .suur{
     padding: 20px 50px;
     width: 1000px;
-    margin-left: 150px;
+    margin: 0 auto;
 }
 
 #stickyheader {
@@ -90,7 +91,7 @@ code {
     text-align: center;
     color: white;
     width: 40%;
-    margin: 45vh auto;
+    margin: 40vh auto;
     transition:  0.5s;
 }
 
