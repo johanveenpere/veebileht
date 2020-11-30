@@ -1,5 +1,6 @@
 body{
     background-size: cover;
+<<<<<<< HEAD
     margin: 0;
     background:
     url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/209/spider_1f577.png") 50px 50px,
@@ -8,22 +9,31 @@ body{
     background-color: #ffdf8e;
     background-position: 0 0, 50px 50px;
 
+=======
+    margin: 0px;
+    overflow-x: hidden;
+>>>>>>> main
 }
+
 .valge{
     background-color: white;
+    z-index: 2;
     padding: 50px;
     border-radius: 25px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 18px;
 }
+
 .must{
     background-color: black;
     color: white;
-    z-index: 1;
+    z-index: 2;
     padding: 35px 0;
     border-radius: 25px;
     font-family: consolas, 'Courier New', Courier, monospace;
+    font-size: 15px;
 }
+
 .shadow{
     box-shadow: 125px 100px rgba(0, 0, 0, 0.5); /* #978452; */
 }
@@ -56,23 +66,27 @@ code {
 .syntax-keyword {
     color: rgb(211, 162, 0);
 }
+
 .vasakul{
+    padding-top: 20px;
     width: 800px;   
-    left: 15%;
     margin-left: 150px;
-    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     float: left;
 }
+
 .paremal{
+    padding: 20px 50px;
     width: 800px;   
-    right: 15%;
     margin-right: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     float: right;
 }
+
 .suur{
+    padding: 20px 50px;
     width: 1000px;
-    left: 5%;
     margin-left: 150px;
 }
 
@@ -100,4 +114,15 @@ code {
 
 #tutvustus{
     overflow: hidden;
+}
+
+#taust{
+    position: absolute;
+    opacity: 0.2;
+    font-size: 33.75px;
+    width: 2001px;
+    margin-top: -25px;
+    margin-left: -25px;
+    z-index: -1;
+    margin-block-start: 0em;
 }
