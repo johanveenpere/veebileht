@@ -4,6 +4,12 @@ function displayTime(){
     let hourstring      = date.getHours().toString(2);
     let outstring = (hourstring + " " + minutestring).replace(/1/g, "🐜").replace(/0/g, "🕷️");
     console.log(outstring);
+    document.getElementById("stickyheader").innerText = outstring;
+}
+function main(){
+    console.log("in main");
+    displayTime();
+    setInterval(displayTime, 60000);
 }
 
-setInterval(displayTime, 60000);
+document.addEventListener("DOMContentLoaded", main);
