@@ -1,18 +1,7 @@
 body{
     background-size: cover;
-<<<<<<< HEAD
-    margin: 0;
-    background:
-    url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/209/spider_1f577.png") 50px 50px,
-    url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/ant_1f41c.png")  50px 50px;
-    background-repeat: repeat, repeat;
-    background-color: #ffdf8e;
-    background-position: 0 0, 50px 50px;
-
-=======
     margin: 0px;
     overflow-x: hidden;
->>>>>>> main
 }
 
 .valge{
