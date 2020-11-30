@@ -37,7 +37,6 @@ body{
     background-attachment: local, local, scroll, scroll;
     background-size: 78px 100%, 78px 100%, 26px 100%, 26px 100%;
     background-color: black;
-    scrollbar-color: rgb(126, 126, 126) transparent;
     padding: 0 30px;
 }
 
@@ -114,5 +113,4 @@ code {
     margin-top: -25px;
     margin-left: -25px;
     z-index: -1;
-    margin-block-start: 0em;
 }
